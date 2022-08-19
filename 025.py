@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.fibstream import FibStream
 
 
-"""https://projecteuler.net/problem=25"""
+""" https://projecteuler.net/problem=25 """
 
 
 class Solution:

@@ -1,7 +1,7 @@
 from tools.compete import Compete
 from math import factorial
 
-"""https://projecteuler.net/problem=20"""
+""" https://projecteuler.net/problem=20 """
 
 
 class Solution:

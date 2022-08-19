@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.factors import Factors
 
 
-"""https://projecteuler.net/problem=21"""
+""" https://projecteuler.net/problem=21 """
 
 
 class Solution:

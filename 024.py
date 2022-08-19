@@ -2,7 +2,7 @@ from tools.compete import Compete
 from itertools import permutations
 
 
-"""https://projecteuler.net/problem=24"""
+""" https://projecteuler.net/problem=24 """
 
 
 class Solution:

@@ -3,7 +3,7 @@ from functools import lru_cache
 from sys import setrecursionlimit
 
 
-"""https://projecteuler.net/problem=14"""
+""" https://projecteuler.net/problem=14 """
 
 
 class Solution:

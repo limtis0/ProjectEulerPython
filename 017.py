@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-"""https://projecteuler.net/problem=17"""
+""" https://projecteuler.net/problem=17 """
 
 
 nums = {
