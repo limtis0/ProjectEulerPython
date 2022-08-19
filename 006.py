@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=6 """
+''' https://projecteuler.net/problem=6 '''
 
 
 class Solution:
@@ -16,6 +16,6 @@ class Solution:
         return int((100**2 * (100+1)**2 * (1/4)) - (100 * (100+1) * (100*2+1) * (1/6)))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution)
-    print(f"Answer: {Solution.math_oneliner()}")
+    print(f'Answer: {Solution.math_oneliner()}')

@@ -2,13 +2,13 @@ from tools.compete import Compete
 from itertools import permutations
 
 
-""" https://projecteuler.net/problem=24 """
+''' https://projecteuler.net/problem=24 '''
 
 
 class Solution:
     @staticmethod
     def itertools():
-        return ''.join(list(permutations("0123456789"))[999999])
+        return ''.join(list(permutations('0123456789'))[999999])
 
     @staticmethod
     def factorial_ns():
@@ -27,4 +27,4 @@ class Solution:
 
 if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=10)
-    print(f"\nAnswer: {Solution.factorial_ns()}")
+    print(f'\nAnswer: {Solution.factorial_ns()}')

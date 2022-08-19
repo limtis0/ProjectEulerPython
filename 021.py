@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.factors import Factors
 
 
-""" https://projecteuler.net/problem=21 """
+''' https://projecteuler.net/problem=21 '''
 
 
 class Solution:
@@ -21,6 +21,6 @@ class Solution:
         return s
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.estimate_method(Solution.hashmap, repeat=10)
-    print(f"\nAnswer: {Solution.hashmap()}")
+    print(f'\nAnswer: {Solution.hashmap()}')

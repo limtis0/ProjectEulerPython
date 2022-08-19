@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.primestream import PrimeStream
 
 
-""" https://projecteuler.net/problem=5 """
+''' https://projecteuler.net/problem=5 '''
 
 
 class Solution:
@@ -29,6 +29,6 @@ class Solution:
         return num
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=2)
-    print(f"\nAnswer: {Solution.primes()}")
+    print(f'\nAnswer: {Solution.primes()}')

@@ -1,10 +1,10 @@
 from colorama import init, Fore, Style
 
-"""
+'''
 Trying to find a part of pi that has my phone number (*** *** ***) in it :)
 
 For me, the answer is 2^89293
-"""
+'''
 
 
 def find_my_phone(phone: str) -> int:
@@ -22,9 +22,9 @@ def print_my_phone(phone: str, power: int) -> None:
     init(convert=True)
     blue = Fore.LIGHTBLUE_EX
     clear = Style.RESET_ALL
-    print(f"{blue}Index: {powered.index(phone)}{clear}\n")
-    print(f"{blue}2^{power}{clear} = {splitted[0]} {blue}{phone}{clear} {splitted[1]}")
+    print(f'{blue}Index: {powered.index(phone)}{clear}\n')
+    print(f'{blue}2^{power}{clear} = {splitted[0]} {blue}{phone}{clear} {splitted[1]}')
 
 
-if __name__ == "__main__":
-    print_my_phone("MY PHONE NUMBER", 89293)
+if __name__ == '__main__':
+    print_my_phone('MY PHONE NUMBER', 89293)

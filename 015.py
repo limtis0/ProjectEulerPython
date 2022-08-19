@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=15 """
+''' https://projecteuler.net/problem=15 '''
 
 
 class Solution:
@@ -16,7 +16,7 @@ class Solution:
         return m[N-1][N-1]
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.estimate_method(Solution.graphs, 20, repeat=1000)
-    print(f"\nAnswer: {Solution.graphs(20)}")
+    print(f'\nAnswer: {Solution.graphs(20)}')
 

@@ -3,7 +3,7 @@ from functools import lru_cache
 from sys import setrecursionlimit
 
 
-""" https://projecteuler.net/problem=14 """
+''' https://projecteuler.net/problem=14 '''
 
 
 class Solution:
@@ -40,8 +40,8 @@ class Solution:
         return max(memo, key=memo.get)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     setrecursionlimit(2000)
 
     Compete.compare_methods(Solution, repeat=2)
-    print(f"\nAnswer: {Solution.memo_no_rec()}")
+    print(f'\nAnswer: {Solution.memo_no_rec()}')

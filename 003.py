@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.primestream import PrimeStream
 
 
-""" https://projecteuler.net/problem=3 """
+''' https://projecteuler.net/problem=3 '''
 
 
 class Solution:
@@ -23,6 +23,6 @@ class Solution:
         return lpf
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.estimate_method(Solution.iterative)
-    print(f"\nAnswer: {Solution.iterative()}")
+    print(f'\nAnswer: {Solution.iterative()}')

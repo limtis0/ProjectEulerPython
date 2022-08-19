@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.primestream import PrimeStream
 
 
-""" https://projecteuler.net/problem=10 """
+''' https://projecteuler.net/problem=10 '''
 
 
 class Solution:
@@ -12,6 +12,6 @@ class Solution:
         return sum([i for i in stream])
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.estimate_method(Solution.sieve, repeat=1)
-    print(f"\nAnswer: {Solution.sieve()}")
+    print(f'\nAnswer: {Solution.sieve()}')

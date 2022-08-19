@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=4 """
+''' https://projecteuler.net/problem=4 '''
 
 
 class Solution:
@@ -31,6 +31,6 @@ class Solution:
         return mn
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=5)
-    print(f"\nAnswer: {Solution.bruteforce_div11()}")
+    print(f'\nAnswer: {Solution.bruteforce_div11()}')

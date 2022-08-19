@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=2 """
+''' https://projecteuler.net/problem=2 '''
 
 
 class Solution:
@@ -29,6 +29,6 @@ class Solution:
         return s
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=100)
-    print(f"\nAnswer: {Solution.iterative()}")
+    print(f'\nAnswer: {Solution.iterative()}')

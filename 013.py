@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=13 """
+''' https://projecteuler.net/problem=13 '''
 
 
 nums = [
@@ -120,6 +120,6 @@ class Solution:
         return str(sum(short_nums))[:10]
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=10000)
-    print(f"\nAnswer: {Solution.short_nums()}")
+    print(f'\nAnswer: {Solution.short_nums()}')

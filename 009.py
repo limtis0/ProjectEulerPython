@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=9 """
+''' https://projecteuler.net/problem=9 '''
 
 
 class Solution:
@@ -16,6 +16,6 @@ class Solution:
                     return a*b*c
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.estimate_method(Solution.bruteforce)
-    print(f"\nAnswer: {Solution.bruteforce()}")
+    print(f'\nAnswer: {Solution.bruteforce()}')

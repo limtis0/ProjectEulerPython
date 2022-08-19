@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.fibstream import FibStream
 
 
-""" https://projecteuler.net/problem=25 """
+''' https://projecteuler.net/problem=25 '''
 
 
 class Solution:
@@ -18,4 +18,4 @@ class Solution:
 
 if __name__ == '__main__':
     Compete.estimate_method(Solution.solution, repeat=10)
-    print(f"\nAnswer: {Solution.solution()}")
+    print(f'\nAnswer: {Solution.solution()}')

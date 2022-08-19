@@ -2,7 +2,7 @@ from tools.compete import Compete
 from tools.factors import Factors
 
 
-""" https://projecteuler.net/problem=12 """
+''' https://projecteuler.net/problem=12 '''
 
 
 class Solution:
@@ -14,12 +14,12 @@ class Solution:
             n += i
         return n
 
-    """
+    '''
     As Nth and N+1th triangle numbers have no factors in common, you can count number of factors for the Nth number
     as [fact(n/2) * fact(n+1)]
     or [fact(n) * fact((n+1)/2)].
     Triangular(N) == n*(n+1)//2, it can be seen here, probably.
-    """
+    '''
     @staticmethod
     def smart():
         cnt = n = 0
@@ -32,6 +32,6 @@ class Solution:
         return n*(n+1)//2
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=3)
-    print(f"\nAnswer: {Solution.smart()}")
+    print(f'\nAnswer: {Solution.smart()}')

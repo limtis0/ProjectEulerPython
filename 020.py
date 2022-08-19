@@ -1,7 +1,7 @@
 from tools.compete import Compete
 from math import factorial
 
-""" https://projecteuler.net/problem=20 """
+''' https://projecteuler.net/problem=20 '''
 
 
 class Solution:
@@ -14,6 +14,6 @@ class Solution:
         return sum(map(int, str(factorial(100))))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution)
-    print(f"\nAnswer: {Solution.oneliner_map()}")
+    print(f'\nAnswer: {Solution.oneliner_map()}')

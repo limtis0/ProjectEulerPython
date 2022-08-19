@@ -1,7 +1,7 @@
 from tools.compete import Compete
 
 
-""" https://projecteuler.net/problem=1 """
+''' https://projecteuler.net/problem=1 '''
 
 
 class Solution:
@@ -29,6 +29,6 @@ class Solution:
         return sum(set(range(3, 1000, 3)).union(set(range(5, 1000, 5))))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Compete.compare_methods(Solution, repeat=100)
-    print(f"\nAnswer: {Solution.oneliner_sets()}")
+    print(f'\nAnswer: {Solution.oneliner_sets()}')
