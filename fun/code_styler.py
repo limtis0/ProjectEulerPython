@@ -3,6 +3,9 @@ from fileinput import FileInput
 from re import search
 
 
+''' Script, that recursively traverses through folders and stylizes .py scripts, according to config (View main) '''
+
+
 class Style:
     """
     :param int dir_parent: from how many parent libraries start to traverse. (0 for this folder)
