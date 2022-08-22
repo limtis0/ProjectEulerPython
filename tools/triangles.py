@@ -1,4 +1,4 @@
-import typing
+from pathlib import Path
 from copy import deepcopy
 
 
@@ -17,8 +17,12 @@ class Triangle:
             size += 1
 
     @classmethod
-    def from_file(cls, file: typing.TextIO):
-        pass
+    def from_file(cls, file: Path):
+        with open(file, 'r') as file:
+            data = []
+            for num in file.read().split():
+                data.append(int(num))
+            return cls(data)
 
     def get_list(self):
         return deepcopy(self._triangle)
