@@ -1,5 +1,5 @@
 from tools.compete import Compete
-import binarytree
+from tools.triangles import Triangle
 
 
 class Solution:
@@ -10,12 +10,15 @@ class Solution:
             66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31, 4, 62, 98, 27, 23, 9, 70, 98, 73, 93,
             38, 53, 60, 4, 23]
 
-    bt = binarytree.build(nums)
-
     @staticmethod
-    def naive_recursion():
-        pass
+    def from_bottom():
+        triangle = Triangle(Solution.nums).get_list()
+        for row in range(len(triangle)-2, 0-1, -1):
+            for col in range(len(triangle[row])):
+                triangle[row][col] += max(triangle[row+1][col], triangle[row+1][col+1])
+        return triangle[0][0]
 
 
 if __name__ == '__main__':
-    print(f'\nAnswer: {Solution.naive_recursion()}')
+    Compete.estimate_method(Solution.from_bottom)
+    print(f'\nAnswer: {Solution.from_bottom()}')
