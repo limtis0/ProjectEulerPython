@@ -1,5 +1,6 @@
 from tools.compete import Compete
 from tools.triangles import Triangle
+from copy import deepcopy
 
 
 class Solution:
@@ -10,9 +11,11 @@ class Solution:
             66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31, 4, 62, 98, 27, 23, 9, 70, 98, 73, 93,
             38, 53, 60, 4, 23]
 
+    triangle = Triangle(nums).get_list()
+
     @staticmethod
     def from_bottom():
-        triangle = Triangle(Solution.nums).get_list()
+        triangle = deepcopy(Solution.triangle)
         for row in range(len(triangle)-2, 0-1, -1):
             for col in range(len(triangle[row])):
                 triangle[row][col] += max(triangle[row+1][col], triangle[row+1][col+1])
