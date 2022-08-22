@@ -2,26 +2,18 @@ import collections
 
 
 class Factors:
-    std = {1: [1], 2: [1, 2], 3: [1, 3]}
-
     @staticmethod
     def factors(num: int) -> collections.Iterator:
         if num < 1:
             return
 
-        if num in Factors.std.keys():
-            for i in Factors.std[num]:
-                yield i
-            return
-        i = 1
         sqrt = int(num ** (1 / 2))
-        while i < sqrt:
+        for i in range(1, sqrt + 1):
             if num % i == 0:
                 yield i
-                yield num // i
-            i += 1
-        if num % sqrt == 0:
-            yield sqrt
+                div_2 = num // i
+                if div_2 != i:
+                    yield div_2
 
     @staticmethod
     def count_factors(num: int) -> int:
