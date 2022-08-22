@@ -19,7 +19,7 @@ class Compete:
               f'\nAverage time: {best_time / repeat}s')
 
     @staticmethod
-    def estimate_method(method: object, *args, repeat=100) -> None:
+    def estimate_method(method: callable, *args, repeat=100) -> None:
         time = Compete._time_method(repeat, method, *args)
         print(f'\'{method.__name__}\': {time}s (in {repeat} repetitions)'
               f'\nAverage time: {time/repeat}')
