@@ -2,7 +2,6 @@ from pathlib import Path
 from fileinput import FileInput
 from re import search
 
-
 ''' Script, that recursively traverses through folders and stylizes .py scripts, according to config (View main) '''
 
 
@@ -13,6 +12,7 @@ class Style:
     :param bool rm_end_spaces: whether to remove spaces from the end of the line
     :param bool inline_doc_spaces: whether to place spaces before and after triple quotes in inline documentation
     """
+
     def __init__(
             self, dir_parent: int,
             quote_inverse: bool,
@@ -34,7 +34,7 @@ class Style:
             line = line.rstrip(' ')
 
         if self.inline_doc_spaces:
-            triple_quote = self._quote_b*3
+            triple_quote = self._quote_b * 3
             if line.count(triple_quote) == 2:
                 line = self._format_doc_spaces(triple_quote, line)
 
@@ -56,7 +56,8 @@ class Style:
 
 def traverse_folders(style: Style):
     file_path = Path(__file__)
-    for script_path in style.parent_dir.rglob('*.py'):
+    for script_path in style.parent_dir.rglob('[0-9]*.py'):
+        print(script_path)
         if script_path != file_path:
             for line in FileInput(script_path, inplace=True):
                 line = style.format(line)
