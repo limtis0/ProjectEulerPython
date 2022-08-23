@@ -5,7 +5,7 @@ from copy import deepcopy
 class Triangle:
     def __init__(self, data):
         if not self.is_triangular(len(data)):
-            raise Exception(f"List is not triangular, length={len(data)}")
+            raise Exception(f'List is not triangular, length={len(data)}')
 
         self._triangle = []
         data = deepcopy(data)
