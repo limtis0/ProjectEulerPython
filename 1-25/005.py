@@ -16,16 +16,13 @@ class Solution:
 
     @staticmethod
     def primes():
-        stream = PrimeStream.prime_stream(100)
+        stream = PrimeStream(100)
         num = 1
-        while True:  # While i < 20
-            prime = next(stream)
-            if prime > 20:
-                break
+        while (prime := next(stream, None)) <= 20:
             j = 1
-            while prime**j < 20:
+            while prime ** j < 20:
                 j += 1
-            num *= prime**(j-1)
+            num *= prime ** (j-1)
         return num
 
 

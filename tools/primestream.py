@@ -4,6 +4,12 @@ from bitarray import bitarray
 
 
 class PrimeStream:
+    """
+    :param cap: the upper limit of prime-numbers to yield
+    """
+    def __new__(cls, cap: int):
+        return cls.prime_stream(cap)
+
     @staticmethod
     def prime_stream(cap: int) -> collections.Iterator:
         cap = int(cap)

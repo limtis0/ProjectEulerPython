@@ -8,7 +8,7 @@ from tools.primestream import PrimeStream
 class Solution:
     @staticmethod
     def sieve():
-        stream = PrimeStream.prime_stream(1000000)
+        stream = PrimeStream(1000000)
         for _ in range(10_000):
             next(stream)
         return next(stream)

@@ -2,6 +2,9 @@ import collections
 
 
 class FibStream:
+    def __new__(cls):
+        return FibStream.fib_stream()
+
     @staticmethod
     def fib_stream() -> collections.Iterator:
         yield 1

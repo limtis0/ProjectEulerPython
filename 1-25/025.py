@@ -8,10 +8,9 @@ from tools.fibstream import FibStream
 class Solution:
     @staticmethod
     def solution():
-        fibs = FibStream.fib_stream()
-        ind, num = 1, next(fibs)
-        while len(str(num)) != 1000:
-            num = next(fibs)
+        fibs = FibStream()
+        ind = 1
+        while len(str(next(fibs))) != 1000:
             ind += 1
         return ind
 

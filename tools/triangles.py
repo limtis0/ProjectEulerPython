@@ -5,7 +5,7 @@ from copy import deepcopy
 class Triangle:
     def __init__(self, data):
         if not self.is_triangular(len(data)):
-            raise Exception(f"List is not triangular length={len(data)}")
+            raise Exception(f"List is not triangular, length={len(data)}")
 
         self._triangle = []
         data = deepcopy(data)
@@ -18,9 +18,9 @@ class Triangle:
 
     @classmethod
     def from_file(cls, file: Path):
-        with open(file, 'r') as file:
+        with open(file, 'r') as text:
             data = []
-            for num in file.read().split():
+            for num in text.read().split():
                 data.append(int(num))
             return cls(data)
 
