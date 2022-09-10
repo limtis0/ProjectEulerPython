@@ -1,6 +1,6 @@
 from tools.compete import Compete
 
-''' https://projecteuler.net/problem=26 '''
+''' https://projecteuler.net/problem=31 '''
 
 
 class Solution:
